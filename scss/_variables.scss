@@ -1,12 +1,14 @@
 // New variables are namespaced as $supernova-[var-name]
 
 // Color system
-$supernova-pink:#F4436C;
+$supernova-pink: #F4436C;
 $primary: $supernova-pink;
 
 // Typography
 $font-family-sans-serif: "Sofia Pro", -apple-system, BlinkMacSystemFont, Roboto, Arial, sans-serif;
 $font-family-base: $font-family-sans-serif;
+$body-color: #151515;
+$supernova-dark: #151515;
 
 // Grid
 $supernova-grid-gutter-width-md: 30px;
@@ -15,7 +17,7 @@ $container-max-widths: (
   sm: 540px,
   md: 720px,
   lg: 960px,
-  xl: 1200px // 1070 + gutter 15*2
+  xl: 1200px
 );
 
 //Carousel TODO:

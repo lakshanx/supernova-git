@@ -1,31 +1,18 @@
-//
-// Button Sizes
-//
-
-// $btn-line-height-lg: 1;
-
-  .btn-lg {
-    line-height: 1rem;  
-  }
-  
-  .btn-sm {
-    @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $btn-font-size-sm, $btn-line-height-sm, $btn-border-radius-sm);
-  }
-  
-
-  .btn-wide{
-    padding:15px 54px;
-  }
-
-
-  //TODO: find a better way
-.btn{
-  border-width: 2px;
-  border-radius: 8px;
-
+.btn-lg {
+  line-height: 1rem;  
 }
 
-.btn-lg{
-padding: 15px 54px;
-font-size: 16px;
+.btn-sm {
+  @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $btn-font-size-sm, $btn-line-height-sm, $btn-border-radius-sm);
+}
+
+  //TODO: find a better way
+.btn {
+  border-width: 2px;
+  border-radius: 8px;
+}
+
+.btn-lg {
+  padding: 15px 54px;
+  font-size: 16px;
 }
