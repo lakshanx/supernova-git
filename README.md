@@ -21,7 +21,7 @@ The Figma design is beautiful, btw. :)
 
 ### To further improve the features of the carousel, I would do:
 * Touch events support.
-* A more dynamic approach to handling different screen sizes and slide counts.
+* Implement a more dynamic approach to handling different screen sizes and slide counts.
 
 ### Need to consider more:
 * Regarding the product title HTML tags in each card, currently added `h3` tag, but depending on the information architecture of the site as a whole, other tags might also be worth considering.
