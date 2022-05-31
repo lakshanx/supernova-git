@@ -3,27 +3,26 @@ $(document).ready(function() {
   const $carouselMultiSlide = $('.carousel--multi-slide');
 
   if ($carouselMultiSlide.length) {
-
     $carouselMultiSlide.on('slide.bs.carousel', function(carouselItem) {
 
-      const $carouselInner = $(this).find(".carousel-inner");
-      const $carouselItem = $(carouselItem.relatedTarget);
-      const carouselIndex = $carouselItem.index();
-      const itemsPerSlide = 5; // TODO: get this from col number?
-      const totalItems = $(this).find('.carousel-item').length;
+    const $carouselInner = $(this).find(".carousel-inner");
+    const $carouselItem = $(carouselItem.relatedTarget);
+    const carouselIndex = $carouselItem.index();
+    const itemsPerSlide = 5; // get this dynamically from col-[number]?
+    const totalItems = $(this).find('.carousel-item').length;
 
-      if (carouselIndex >= totalItems - (itemsPerSlide - 1)) {
-        const it = itemsPerSlide - (totalItems - carouselIndex);
-        for (let i = 0; i < it; i++) {
-          //append slides to end
-          if (carouselItem.direction == "left") {
-            $(this).find('.carousel-item').eq(i).appendTo($carouselInner);
-          } else {
-            $(this).find('.carousel-item').eq(0).appendTo($carouselInner);
-          }
+    if (carouselIndex >= totalItems - (itemsPerSlide - 1)) {
+      const it = itemsPerSlide - (totalItems - carouselIndex);
+      for (let i = 0; i < it; i++) {
+        //append slides
+        if (carouselItem.direction == "left") {
+          $(this).find('.carousel-item').eq(i).appendTo($carouselInner);
+        } else {
+          $(this).find('.carousel-item').eq(0).appendTo($carouselInner);
         }
       }
-    });
+    }
+  });
   }
 
   console.log(

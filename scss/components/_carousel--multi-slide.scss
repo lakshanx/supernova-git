@@ -1,11 +1,6 @@
 // Extends Bootstrap carosual.
 
 .carousel--multi-slide {
-  .carousel-control-prev, 
-  .carousel-control-next {
-    opacity: 1;
-  }
-
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
     position: absolute;  
@@ -28,9 +23,7 @@
     margin-right: 0;
   }
 
-  //TODO: Optimize positioning for tapping sides
   @include media-breakpoint-down(sm) {
-
     .carousel-control-prev {
       top: -7%;
       left: 13%;
@@ -40,11 +33,10 @@
       top: -7%;
       right: 12%;
     }
-
   }
 
   .carousel-inner {
-    overflow: visible; //TODO:
+    overflow: visible;
     flex-wrap: nowrap;
   }
   
@@ -103,7 +95,6 @@
     visibility: visible;
   }
   
-  // left or forward direction 
   .active.carousel-item-left + .carousel-item-next.carousel-item-left,
   .carousel-item-next.carousel-item-left + .carousel-item,
   .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,    
@@ -113,7 +104,7 @@
     transform: translate3d(-100%, 0, 0);
     visibility: visible;
   }
-  // right or prev direction //t - previous slide direction last item animation fix 
+ 
   .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
     position: relative;
     transform: translate3d(100%, 0, 0);
@@ -136,7 +127,6 @@
 
   @include media-breakpoint-up(lg) {
     .carousel-inner{
-      //todo : find a scientific way to d0 this with math:  :: write a mixin?
       width: 130%;
       transform: translate(-10.5%);
     }        

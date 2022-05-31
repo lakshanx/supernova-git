@@ -11,10 +11,3 @@
   align-items: center !important;
   justify-content: center !important;
 }
-
-// Adds supernova-pink to the color pallet. TODO:
-$supernova-theme: (
-  "supernova-pink": $supernova-pink
-);
-
-$theme-colors: map-merge($supernova-theme, $theme-colors);

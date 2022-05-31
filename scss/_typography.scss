@@ -7,7 +7,8 @@
   font-display: swap;
 }
 
-//TODO:
-.text-dark {
-    color: #151515 !important;
+@include media-breakpoint-down(sm) {
+  .h5{
+    font-size: 1rem;
+  }
 }
