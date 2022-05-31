@@ -14,3 +14,7 @@ Thank you!
 
 The Figma design is beautiful, btw. :)
 
+
+### To further improve, nice to have the following features:
+* Touch events support.
+* More dynamic approach to handle different screen sizes and slide counts.

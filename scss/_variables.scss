@@ -2,17 +2,17 @@
 
 // Color system
 $supernova-pink: #F4436C;
-$primary: $supernova-pink;
+$primary:        $supernova-pink;
 
 // Typography
 $font-family-sans-serif: "Sofia Pro", -apple-system, BlinkMacSystemFont, Roboto, Arial, sans-serif;
-$font-family-base: $font-family-sans-serif;
-$body-color: #151515;
-$supernova-dark: #151515;
+$font-family-base:       $font-family-sans-serif;
+$body-color:           #151515;
+$supernova-dark:       #151515;
 
 // Grid
 $supernova-grid-gutter-width-md: 30px;
-$grid-gutter-width: 15px;
+$grid-gutter-width:              15px;
 $container-max-widths: (
   sm: 540px,
   md: 720px,
@@ -20,7 +20,11 @@ $container-max-widths: (
   xl: 1200px
 );
 
-//Carousel TODO:
-$carousel-control-color: $supernova-pink;
-$carousel-control-prev-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='#{$carousel-control-color}' width='8' height='8' viewBox='0 0 8 8'><path d='M5.25 0l-4 4 4 4 1.5-1.5L4.25 4l2.5-2.5L5.25 0z'/></svg>");
-$carousel-control-next-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='#{$carousel-control-color}' width='8' height='8' viewBox='0 0 8 8'><path d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/></svg>");
+//Carousel
+$carousel-control-color:        $supernova-pink;
+$carousel-transition-duration:  .7s;
+$carousel-transition:           transform $carousel-transition-duration ease-in-out;
+$carousel-control-prev-icon-bg: url("data:image/svg+xml, %3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg' aria-hidden='true' focusable='false' role='presentation'%3E%3Cpath d='M13.8856 2.66402L4.45759 12.0921L13.8856 21.5201L12 23.4058L0.686305 12.0921L12 0.778373L13.8856 2.66402Z' fill='#{$carousel-control-color}'/%3E%3C/svg%3E");
+$carousel-control-next-icon-bg: url("data:image/svg+xml, %3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg' aria-hidden='true' focusable='false' role='presentation'%3E%3Cpath d='M10.1144 21.336L19.5424 11.9079L10.1144 2.47988L12 0.594238L23.3137 11.9079L12 23.2216L10.1144 21.336Z' fill='#{$carousel-control-color}'/%3E%3C/svg%3E ");
+
+//Buttons
