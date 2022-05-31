@@ -24,4 +24,4 @@ The Figma design is beautiful, btw. :)
 * Implement a more dynamic approach to handling different screen sizes and slide counts.
 
 ### Need to consider more:
-* Regarding the product title HTML tags in each card, currently added `h3` tag, but depending on the information architecture of the site as a whole, other tags might also be worth considering.
+* Regarding the product title HTML tags in each card, currently added `h3` tag, but depending on the information architecture of the site as a whole, other options might also be worth considering.
