@@ -1,0 +1,27 @@
+// Bootstrap v4.6.1 Customized for Supernova
+// Don't forget to check README.md if you have time :) 
+// Thank you 🙌 
+// ===================================================
+
+@import "./variables";
+
+@import "../vendor/bootstrap/scss/functions";
+@import "../vendor/bootstrap/scss/variables";
+@import "../vendor/bootstrap/scss/mixins";
+@import "../vendor/bootstrap/scss/root";
+@import "../vendor/bootstrap/scss/reboot";
+@import "../vendor/bootstrap/scss/type";
+@import "../vendor/bootstrap/scss/images";
+@import "../vendor/bootstrap/scss/grid";
+@import "../vendor/bootstrap/scss/buttons";
+@import "../vendor/bootstrap/scss/card";
+@import "../vendor/bootstrap/scss/badge";
+@import "../vendor/bootstrap/scss/carousel";
+@import "../vendor/bootstrap/scss/utilities";
+
+@import "./typography";
+@import "./grid";
+@import "./components/card--product";
+@import "./components/carousel--multi-slide";
+@import "./components/buttons";
+@import "./utilities";

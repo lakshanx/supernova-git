@@ -1,0 +1,14 @@
+// Load Sofia Pro locally. For testing. 
+// Might be better to replace with a web font service.
+@font-face {   
+  font-family: "Sofia Pro";
+  src: url(../fonts/sofia-pro-regular.woff2);
+  font-weight:400;
+  font-display: swap;
+}
+
+//TODO:
+.text-dark {
+    color: #151515 !important;
+  }
+   

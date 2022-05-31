@@ -1,0 +1,148 @@
+
+// Extends Bootstrap carosual.
+// ===========================
+
+.carousel--multi-slide {
+
+    .carousel-item{
+        transition: transform .7s ease-in-out;
+    }
+    .carousel-control-prev, 
+    .carousel-control-next{
+        opacity: 1;
+    }
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon{
+        position: absolute;  
+        width: 40px;
+        height: 40px;
+        top: 27%;
+        background-size: 20px;
+        background-color:#FFF2F4 ;      
+    }
+    .carousel-control-prev-icon{
+        left: -1rem;
+        background-image: url("data:image/svg+xml, %3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg' aria-hidden='true' focusable='false' role='presentation'%3E%3Cpath d='M13.8856 2.66402L4.45759 12.0921L13.8856 21.5201L12 23.4058L0.686305 12.0921L12 0.778373L13.8856 2.66402Z' fill='%23F3436C'/%3E%3C/svg%3E");
+    }
+    .carousel-control-next-icon{
+        right: -1rem;
+        background-image: url("data:image/svg+xml, %3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg' aria-hidden='true' focusable='false' role='presentation'%3E%3Cpath d='M10.1144 21.336L19.5424 11.9079L10.1144 2.47988L12 0.594238L23.3137 11.9079L12 23.2216L10.1144 21.336Z' fill='%23F3436C'/%3E%3C/svg%3E ");
+    }   
+
+    //TODO:
+    .carousel-item {
+        margin-right: 0;
+        //display: block;
+    }
+
+    //TODO: Optimize positioning for tapping sides
+    @include media-breakpoint-down(sm){
+        .carousel-control-prev{
+            top: -7%;
+            left: 13%;
+        } 
+        .carousel-control-next{
+            top: -7%;
+            right: 12%;
+        }
+    }
+}
+
+
+.carousel-inner{
+    overflow: visible; //TODO:
+    flex-wrap: nowrap;
+}
+
+    .carousel-inner .carousel-item-next {
+        position: relative;
+        transform: translate3d(0, 0, 0);
+    }
+
+    /* farthest right hidden item must be also positioned for animations */
+    .carousel-inner .carousel-item-prev.carousel-item-right {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+
+    .carousel-inner .carousel-item-next {
+        position: relative;
+        transform: translate3d(0, 0, 0);
+    }
+
+    /* right or prev direction */
+    .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    .carousel-item-prev.carousel-item-right + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,    
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+
+    .carousel-inner .active + .carousel-item,
+    .carousel-inner .active + .carousel-item + .carousel-item,
+    .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item {
+        display: block;
+    } 
+
+    .carousel-item--visible,
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item,
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+        transition: none;
+    }
+
+    .carousel-inner .active.col-3.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -25%;   /*change this with javascript in the future*/
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+
+    /* left or forward direction */
+    .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    .carousel-item-next.carousel-item-left + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,    
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    /* right or prev direction //t - previous slide direction last item animation fix */
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+
+    .carousel-inner{
+        width: 300%;
+        transform: translate(-20.1%);
+    }        
+
+    @include media-breakpoint-up(md){
+        .carousel-inner{
+            width: 200%;
+            transform: translate(-11.5%);
+        }           
+    }
+    @include media-breakpoint-up(lg){
+        .carousel-inner{
+            //todo : find a scientific way to d0 this with math:  :: write a mixin?
+            width: 130%;
+            transform: translate(-10.5%);
+        }        
+    }

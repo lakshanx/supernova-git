@@ -1,0 +1,51 @@
+.card--product{
+    border:none;
+
+    .badge{
+        position: absolute;
+        font-size: 10px; // Usage: to scale up and down.
+        width: 9em;
+        height: 9em;
+        top: -0.5rem;
+        right: -0.6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 400;
+        
+        span{
+            color: white;
+            font-size: 3.1em;
+            line-height: 0;
+            display: inline-block;
+            margin-top: -0.3em;
+        }       
+    }
+
+    &__price__regular{
+        
+    }
+
+    //.card--product__media
+    &__media{
+        background-color: #fff2f4;
+    }
+
+    .ratings{
+        font-size: 14px;
+    }
+
+    @include media-breakpoint-up(md){
+
+        // .card-body{
+        //     padding: 1.25rem 0;
+        // }
+    }
+
+}
+
+
+//TODO:
+.ratings__reviews-count{
+    text-decoration: underline;
+}

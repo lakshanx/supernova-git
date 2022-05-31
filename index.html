@@ -4,9 +4,555 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Supernova task</title>
+    <meta name="description" content="Supernova Carousel">
+    <title>Supernova Product Carousel</title>
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
+
+
+  <section class="container pt-4">
+    <div 
+      id="supernova-products-carousel" 
+      class="carousel carousel--multi-slide slide"  
+      data-ride="carousel" 
+      data-interval="7000" 
+      data-pause="hover"
+    >
+
+        <div class="overflow-hidden py-2">
+          <div class="carousel--products__badge-clearance">
+            <div class="carousel-inner row text-center " role="listbox">
+                <div class="carousel-item col-3 active">
+                  <div class="card card--product">
+                      <a class="card--product__media d-block" href="#">
+                        <picture class="d-block">
+                          <source media="(max-width: 767px)" srcset="./img/placeholder-mobile.png">
+                          <source media="(min-width: 767px)" srcset="./img/placeholder.png">
+                          <img class="card-img-top" src="./img/placeholder.png" alt="Product image" loading="lazy">
+                        </picture>
+                      </a>  
+                      <div class="card-body px-1 pt-2">
+                        <div class="ratings">
+                          <span class="ratings__stars">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M8 12L2 16L5 10L0 6H6L8 0L10 6H16L11 10L14 16L8 12Z" fill="#F4436C"/>
+                            </svg>  
+                          </span>
+                          <span class="pr-1">4.8/5.0</span> 
+                          <a href="#" class="text-primary text-underline">199 Reviews</a>
+                        </div>
+                        <h3 class="card-title h5 flex-center ">
+                          <a class="text-dark px-xl-5 py-1 px-sm-5 px-md-0" href="">Like A Virgin Hair Masque Could be in 2 lines</a>
+                        </h3>
+                        <p class="card--product__price h5">
+                          <span class="card--product__price__regular text-line-through"><span class="sr-only">Regular price:</span> £59.90</span> 
+                          <span class="card--product__price__sale text-primary"><span class="sr-only">Sale price:</span> £49.90</span>
+                        </p>
+                        <a href="#" class="btn btn-lg btn-primary btn-block col-10 col-lg-12 mx-auto px-1">Add To Cart</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="carousel-item col-3">
+                  <div class="card card--product">
+                      <div class="badge rounded-circle d-none d-md-flex bg-primary"><span>new!</span></div>
+                      <a class="card--product__media d-block" href="#">
+                        <picture class="d-block">
+                          <source media="(max-width: 767px)" srcset="./img/placeholder-mobile.png">
+                          <source media="(min-width: 767px)" srcset="./img/placeholder.png">
+                          <img class="card-img-top" src="./img/placeholder.png" alt="Product image" loading="lazy">
+                        </picture>
+                      </a>  
+                      <div class="card-body px-1 pt-2 px-1 pt-2">
+                        <div class="ratings">
+                          <span class="ratings__stars">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M8 12L2 16L5 10L0 6H6L8 0L10 6H16L11 10L14 16L8 12Z" fill="#F4436C"/>
+                            </svg>  
+                          </span>
+                          <span class="pr-1">4.8/5.0</span> 
+                          <a href="#" class="text-primary text-underline">199 Reviews</a>
+                        </div>
+                        <h3 class="card-title h5 flex-center ">
+                          <a class="text-dark px-xl-5 py-1 px-sm-5 px-md-0" href="">Like A Virgin Hair Masque Could be in 2 lines</a>
+                        </h3>
+                        <p class="card--product__price h5">
+                          <span class="card--product__price__regular text-line-through"><span class="sr-only">Regular price:</span> £59.90</span> 
+                          <span class="card--product__price__sale text-primary"><span class="sr-only">Sale price:</span> £49.90</span>
+                        </p>
+                        <a href="#" class="btn btn-lg btn-primary btn-block col-10 col-lg-12 mx-auto px-1">Add To Cart</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="carousel-item col-3">
+                  <div class="card card--product">
+                      <a class="card--product__media d-block" href="#">
+                        <picture class="d-block">
+                          <source media="(max-width: 767px)" srcset="./img/placeholder-mobile.png">
+                          <source media="(min-width: 767px)" srcset="./img/placeholder.png">
+                          <img class="card-img-top" src="./img/placeholder.png" alt="Product image" loading="lazy">
+                        </picture>
+                      </a>  
+                      <div class="card-body px-1 pt-2">
+                        <div class="ratings">
+                          <span class="ratings__stars">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M8 12L2 16L5 10L0 6H6L8 0L10 6H16L11 10L14 16L8 12Z" fill="#F4436C"/>
+                            </svg>  
+                          </span>
+                          <span class="pr-1">4.8/5.0</span> 
+                          <a href="#" class="text-primary text-underline">199 Reviews</a>
+                        </div>
+                        <h3 class="card-title h5 flex-center ">
+                          <a class="text-dark px-xl-5 py-1 px-sm-5 px-md-0" href="">Like A Virgin Hair Masque Could be in 2 lines</a>
+                        </h3>
+                        <p class="card--product__price h5">
+                          <span class="card--product__price__regular text-line-through"><span class="sr-only">Regular price:</span> £59.90</span> 
+                          <span class="card--product__price__sale text-primary"><span class="sr-only">Sale price:</span> £49.90</span>
+                        </p>
+                        <a href="#" class="btn btn-lg btn-primary btn-block col-10 col-lg-12 mx-auto px-1">Add To Cart</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="carousel-item col-3">
+                  <div class="card card--product">
+                      <a class="card--product__media d-block" href="#">
+                        <picture class="d-block">
+                          <source media="(max-width: 767px)" srcset="./img/placeholder-mobile.png">
+                          <source media="(min-width: 767px)" srcset="./img/placeholder.png">
+                          <img class="card-img-top" src="./img/placeholder.png" alt="Product image" loading="lazy">
+                        </picture>
+                      </a>  
+                      <div class="card-body px-1 pt-2">
+                        <div class="ratings">
+                          <span class="ratings__stars">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M8 12L2 16L5 10L0 6H6L8 0L10 6H16L11 10L14 16L8 12Z" fill="#F4436C"/>
+                            </svg>  
+                          </span>
+                          <span class="pr-1">4.8/5.0</span> 
+                          <a href="#" class="text-primary text-underline">199 Reviews</a>
+                        </div>
+                        <h3 class="card-title h5 flex-center ">
+                          <a class="text-dark px-xl-5 py-1 px-sm-5 px-md-0" href="">Like A Virgin Hair Masque Could be in 2 lines</a>
+                        </h3>
+                        <p class="card--product__price h5">
+                          <span class="card--product__price__regular text-line-through"><span class="sr-only">Regular price:</span> £59.90</span> 
+                          <span class="card--product__price__sale text-primary"><span class="sr-only">Sale price:</span> £49.90</span>
+                        </p>
+                        <a href="#" class="btn btn-lg btn-primary btn-block col-10 col-lg-12 mx-auto px-1">Add To Cart</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="carousel-item col-3">
+                  <div class="card card--product">
+                      <a class="card--product__media d-block" href="#">
+                        <picture class="d-block">
+                          <source media="(max-width: 767px)" srcset="./img/placeholder-mobile.png">
+                          <source media="(min-width: 767px)" srcset="./img/placeholder.png">
+                          <img class="card-img-top" src="./img/placeholder.png" alt="Product image" loading="lazy">
+                        </picture>
+                      </a>  
+                      <div class="card-body px-1 pt-2">
+                        <div class="ratings">
+                          <span class="ratings__stars">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M8 12L2 16L5 10L0 6H6L8 0L10 6H16L11 10L14 16L8 12Z" fill="#F4436C"/>
+                            </svg>  
+                          </span>
+                          <span class="pr-1">4.8/5.0</span> 
+                          <a href="#" class="text-primary text-underline">199 Reviews</a>
+                        </div>
+                        <h3 class="card-title h5 flex-center ">
+                          <a class="text-dark px-xl-5 py-1 px-sm-5 px-md-0" href="">Like A Virgin Hair Masque Could be in 2 lines</a>
+                        </h3>
+                        <p class="card--product__price h5">
+                          <span class="card--product__price__regular text-line-through"><span class="sr-only">Regular price:</span> £59.90</span> 
+                          <span class="card--product__price__sale text-primary"><span class="sr-only">Sale price:</span> £49.90</span>
+                        </p>
+                        <a href="#" class="btn btn-lg btn-primary btn-block col-10 col-lg-12 mx-auto px-1">Add To Cart</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="carousel-item col-3">
+                  <div class="card card--product">
+                      <a class="card--product__media d-block" href="#">
+                        <picture class="d-block">
+                          <source media="(max-width: 767px)" srcset="./img/placeholder-mobile.png">
+                          <source media="(min-width: 767px)" srcset="./img/placeholder.png">
+                          <img class="card-img-top" src="./img/placeholder.png" alt="Product image" loading="lazy">
+                        </picture>
+                      </a>  
+                      <div class="card-body px-1 pt-2">
+                        <div class="ratings">
+                          <span class="ratings__stars">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M8 12L2 16L5 10L0 6H6L8 0L10 6H16L11 10L14 16L8 12Z" fill="#F4436C"/>
+                            </svg>  
+                          </span>
+                          <span class="pr-1">4.8/5.0</span> 
+                          <a href="#" class="text-primary text-underline">199 Reviews</a>
+                        </div>
+                        <h3 class="card-title h5 flex-center ">
+                          <a class="text-dark px-xl-5 py-1 px-sm-5 px-md-0" href="">Like A Virgin Hair Masque Could be in 2 lines</a>
+                        </h3>
+                        <p class="card--product__price h5">
+                          <span class="card--product__price__regular text-line-through"><span class="sr-only">Regular price:</span> £59.90</span> 
+                          <span class="card--product__price__sale text-primary"><span class="sr-only">Sale price:</span> £49.90</span>
+                        </p>
+                        <a href="#" class="btn btn-lg btn-primary btn-block col-10 col-lg-12 mx-auto px-1">Add To Cart</a>
+                      </div>
+                    </div>
+                </div>      
+                <div class="carousel-item col-3">
+                  <div class="card card--product">
+                      <a class="card--product__media d-block" href="#">
+                        <picture class="d-block">
+                          <source media="(max-width: 767px)" srcset="./img/placeholder-mobile.png">
+                          <source media="(min-width: 767px)" srcset="./img/placeholder.png">
+                          <img class="card-img-top" src="./img/placeholder.png" alt="Product image" loading="lazy">
+                        </picture>
+                      </a>  
+                      <div class="card-body px-1 pt-2">
+                        <div class="ratings">
+                          <span class="ratings__stars">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M8 12L2 16L5 10L0 6H6L8 0L10 6H16L11 10L14 16L8 12Z" fill="#F4436C"/>
+                            </svg>  
+                          </span>
+                          <span class="pr-1">4.8/5.0</span> 
+                          <a href="#" class="text-primary text-underline">199 Reviews</a>
+                        </div>
+                        <h3 class="card-title h5 flex-center ">
+                          <a class="text-dark px-xl-5 py-1 px-sm-5 px-md-0" href="">Like A Virgin Hair Masque Could be in 2 lines</a>
+                        </h3>
+                        <p class="card--product__price h5">
+                          <span class="card--product__price__regular text-line-through"><span class="sr-only">Regular price:</span> £59.90</span> 
+                          <span class="card--product__price__sale text-primary"><span class="sr-only">Sale price:</span> £49.90</span>
+                        </p>
+                        <a href="#" class="btn btn-lg btn-primary btn-block col-10 col-lg-12 mx-auto px-1">Add To Cart</a>
+                      </div>
+                    </div>
+                </div>                    <div class="carousel-item col-3">
+                  <div class="card card--product">
+                      <a class="card--product__media d-block" href="#">
+                        <picture class="d-block">
+                          <source media="(max-width: 767px)" srcset="./img/placeholder-mobile.png">
+                          <source media="(min-width: 767px)" srcset="./img/placeholder.png">
+                          <img class="card-img-top" src="./img/placeholder.png" alt="Product image" loading="lazy">
+                        </picture>
+                      </a>  
+                      <div class="card-body px-1 pt-2">
+                        <div class="ratings">
+                          <span class="ratings__stars">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M8 12L2 16L5 10L0 6H6L8 0L10 6H16L11 10L14 16L8 12Z" fill="#F4436C"/>
+                            </svg>  
+                          </span>
+                          <span class="pr-1">4.8/5.0</span> 
+                          <a href="#" class="text-primary text-underline">199 Reviews</a>
+                        </div>
+                        <h3 class="card-title h5 flex-center ">
+                          <a class="text-dark px-xl-5 py-1 px-sm-5 px-md-0" href="">Like A Virgin Hair Masque Could be in 2 lines</a>
+                        </h3>
+                        <p class="card--product__price h5">
+                          <span class="card--product__price__regular text-line-through"><span class="sr-only">Regular price:</span> £59.90</span> 
+                          <span class="card--product__price__sale text-primary"><span class="sr-only">Sale price:</span> £49.90</span>
+                        </p>
+                        <a href="#" class="btn btn-lg btn-primary btn-block col-10 col-lg-12 mx-auto px-1">Add To Cart</a>
+                      </div>
+                    </div>
+                </div>                    <div class="carousel-item col-3">
+                  <div class="card card--product">
+                      <a class="card--product__media d-block" href="#">
+                        <picture class="d-block">
+                          <source media="(max-width: 767px)" srcset="./img/placeholder-mobile.png">
+                          <source media="(min-width: 767px)" srcset="./img/placeholder.png">
+                          <img class="card-img-top" src="./img/placeholder.png" alt="Product image" loading="lazy">
+                        </picture>
+                      </a>  
+                      <div class="card-body px-1 pt-2">
+                        <div class="ratings">
+                          <span class="ratings__stars">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M8 12L2 16L5 10L0 6H6L8 0L10 6H16L11 10L14 16L8 12Z" fill="#F4436C"/>
+                            </svg>  
+                          </span>
+                          <span class="pr-1">4.8/5.0</span> 
+                          <a href="#" class="text-primary text-underline">199 Reviews</a>
+                        </div>
+                        <h3 class="card-title h5 flex-center ">
+                          <a class="text-dark px-xl-5 py-1 px-sm-5 px-md-0" href="">Like A Virgin Hair Masque Could be in 2 lines</a>
+                        </h3>
+                        <p class="card--product__price h5">
+                          <span class="card--product__price__regular text-line-through"><span class="sr-only">Regular price:</span> £59.90</span> 
+                          <span class="card--product__price__sale text-primary"><span class="sr-only">Sale price:</span> £49.90</span>
+                        </p>
+                        <a href="#" class="btn btn-lg btn-primary btn-block col-10 col-lg-12 mx-auto px-1">Add To Cart</a>
+                      </div>
+                    </div>
+                </div>                    <div class="carousel-item col-3">
+                  <div class="card card--product">
+                      <a class="card--product__media d-block" href="#">
+                        <picture class="d-block">
+                          <source media="(max-width: 767px)" srcset="./img/placeholder-mobile.png">
+                          <source media="(min-width: 767px)" srcset="./img/placeholder.png">
+                          <img class="card-img-top" src="./img/placeholder.png" alt="Product image" loading="lazy">
+                        </picture>
+                      </a>  
+                      <div class="card-body px-1 pt-2">
+                        <div class="ratings">
+                          <span class="ratings__stars">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M8 12L2 16L5 10L0 6H6L8 0L10 6H16L11 10L14 16L8 12Z" fill="#F4436C"/>
+                            </svg>  
+                          </span>
+                          <span class="pr-1">4.8/5.0</span> 
+                          <a href="#" class="text-primary text-underline">199 Reviews</a>
+                        </div>
+                        <h3 class="card-title h5 flex-center ">
+                          <a class="text-dark px-xl-5 py-1 px-sm-5 px-md-0" href="">Like A Virgin Hair Masque Could be in 2 lines</a>
+                        </h3>
+                        <p class="card--product__price h5">
+                          <span class="card--product__price__regular text-line-through"><span class="sr-only">Regular price:</span> £59.90</span> 
+                          <span class="card--product__price__sale text-primary"><span class="sr-only">Sale price:</span> £49.90</span>
+                        </p>
+                        <a href="#" class="btn btn-lg btn-primary btn-block col-10 col-lg-12 mx-auto px-1">Add To Cart</a>
+                      </div>
+                    </div>
+                </div>                    <div class="carousel-item col-3">
+                  <div class="card card--product">
+                      <a class="card--product__media d-block" href="#">
+                        <picture class="d-block">
+                          <source media="(max-width: 767px)" srcset="./img/placeholder-mobile.png">
+                          <source media="(min-width: 767px)" srcset="./img/placeholder.png">
+                          <img class="card-img-top" src="./img/placeholder.png" alt="Product image" loading="lazy">
+                        </picture>
+                      </a>  
+                      <div class="card-body px-1 pt-2">
+                        <div class="ratings">
+                          <span class="ratings__stars">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M8 12L2 16L5 10L0 6H6L8 0L10 6H16L11 10L14 16L8 12Z" fill="#F4436C"/>
+                            </svg>  
+                          </span>
+                          <span class="pr-1">4.8/5.0</span> 
+                          <a href="#" class="text-primary text-underline">199 Reviews</a>
+                        </div>
+                        <h3 class="card-title h5 flex-center ">
+                          <a class="text-dark px-xl-5 py-1 px-sm-5 px-md-0" href="">Like A Virgin Hair Masque Could be in 2 lines</a>
+                        </h3>
+                        <p class="card--product__price h5">
+                          <span class="card--product__price__regular text-line-through"><span class="sr-only">Regular price:</span> £59.90</span> 
+                          <span class="card--product__price__sale text-primary"><span class="sr-only">Sale price:</span> £49.90</span>
+                        </p>
+                        <a href="#" class="btn btn-lg btn-primary btn-block col-10 col-lg-12 mx-auto px-1">Add To Cart</a>
+                      </div>
+                    </div>
+                </div>                    <div class="carousel-item col-3">
+                  <div class="card card--product">
+                      <a class="card--product__media d-block" href="#">
+                        <picture class="d-block">
+                          <source media="(max-width: 767px)" srcset="./img/placeholder-mobile.png">
+                          <source media="(min-width: 767px)" srcset="./img/placeholder.png">
+                          <img class="card-img-top" src="./img/placeholder.png" alt="Product image" loading="lazy">
+                        </picture>
+                      </a>  
+                      <div class="card-body px-1 pt-2">
+                        <div class="ratings">
+                          <span class="ratings__stars">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M8 12L2 16L5 10L0 6H6L8 0L10 6H16L11 10L14 16L8 12Z" fill="#F4436C"/>
+                            </svg>  
+                          </span>
+                          <span class="pr-1">4.8/5.0</span> 
+                          <a href="#" class="text-primary text-underline">199 Reviews</a>
+                        </div>
+                        <h3 class="card-title h5 flex-center ">
+                          <a class="text-dark px-xl-5 py-1 px-sm-5 px-md-0" href="">Like A Virgin Hair Masque Could be in 2 lines</a>
+                        </h3>
+                        <p class="card--product__price h5">
+                          <span class="card--product__price__regular text-line-through"><span class="sr-only">Regular price:</span> £59.90</span> 
+                          <span class="card--product__price__sale text-primary"><span class="sr-only">Sale price:</span> £49.90</span>
+                        </p>
+                        <a href="#" class="btn btn-lg btn-primary btn-block col-10 col-lg-12 mx-auto px-1">Add To Cart</a>
+                      </div>
+                    </div>
+                </div>                    <div class="carousel-item col-3">
+                  <div class="card card--product">
+                      <a class="card--product__media d-block" href="#">
+                        <picture class="d-block">
+                          <source media="(max-width: 767px)" srcset="./img/placeholder-mobile.png">
+                          <source media="(min-width: 767px)" srcset="./img/placeholder.png">
+                          <img class="card-img-top" src="./img/placeholder.png" alt="Product image" loading="lazy">
+                        </picture>
+                      </a>  
+                      <div class="card-body px-1 pt-2">
+                        <div class="ratings">
+                          <span class="ratings__stars">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M8 12L2 16L5 10L0 6H6L8 0L10 6H16L11 10L14 16L8 12Z" fill="#F4436C"/>
+                            </svg>  
+                          </span>
+                          <span class="pr-1">4.8/5.0</span> 
+                          <a href="#" class="text-primary text-underline">199 Reviews</a>
+                        </div>
+                        <h3 class="card-title h5 flex-center ">
+                          <a class="text-dark px-xl-5 py-1 px-sm-5 px-md-0" href="">Like A Virgin Hair Masque Could be in 2 lines</a>
+                        </h3>
+                        <p class="card--product__price h5">
+                          <span class="card--product__price__regular text-line-through"><span class="sr-only">Regular price:</span> £59.90</span> 
+                          <span class="card--product__price__sale text-primary"><span class="sr-only">Sale price:</span> £49.90</span>
+                        </p>
+                        <a href="#" class="btn btn-lg btn-primary btn-block col-10 col-lg-12 mx-auto px-1">Add To Cart</a>
+                      </div>
+                    </div>
+                </div>                    <div class="carousel-item col-3">
+                  <div class="card card--product">
+                      <a class="card--product__media d-block" href="#">
+                        <picture class="d-block">
+                          <source media="(max-width: 767px)" srcset="./img/placeholder-mobile.png">
+                          <source media="(min-width: 767px)" srcset="./img/placeholder.png">
+                          <img class="card-img-top" src="./img/placeholder.png" alt="Product image" loading="lazy">
+                        </picture>
+                      </a>  
+                      <div class="card-body px-1 pt-2">
+                        <div class="ratings">
+                          <span class="ratings__stars">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M8 12L2 16L5 10L0 6H6L8 0L10 6H16L11 10L14 16L8 12Z" fill="#F4436C"/>
+                            </svg>  
+                          </span>
+                          <span class="pr-1">4.8/5.0</span> 
+                          <a href="#" class="text-primary text-underline">199 Reviews</a>
+                        </div>
+                        <h3 class="card-title h5 flex-center ">
+                          <a class="text-dark px-xl-5 py-1 px-sm-5 px-md-0" href="">Like A Virgin Hair Masque Could be in 2 lines</a>
+                        </h3>
+                        <p class="card--product__price h5">
+                          <span class="card--product__price__regular text-line-through"><span class="sr-only">Regular price:</span> £59.90</span> 
+                          <span class="card--product__price__sale text-primary"><span class="sr-only">Sale price:</span> £49.90</span>
+                        </p>
+                        <a href="#" class="btn btn-lg btn-primary btn-block col-10 col-lg-12 mx-auto px-1">Add To Cart</a>
+                      </div>
+                    </div>
+                </div>                    <div class="carousel-item col-3">
+                  <div class="card card--product">
+                      <a class="card--product__media d-block" href="#">
+                        <picture class="d-block">
+                          <source media="(max-width: 767px)" srcset="./img/placeholder-mobile.png">
+                          <source media="(min-width: 767px)" srcset="./img/placeholder.png">
+                          <img class="card-img-top" src="./img/placeholder.png" alt="Product image" loading="lazy">
+                        </picture>
+                      </a>  
+                      <div class="card-body px-1 pt-2">
+                        <div class="ratings">
+                          <span class="ratings__stars">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M8 12L2 16L5 10L0 6H6L8 0L10 6H16L11 10L14 16L8 12Z" fill="#F4436C"/>
+                            </svg>  
+                          </span>
+                          <span class="pr-1">4.8/5.0</span> 
+                          <a href="#" class="text-primary text-underline">199 Reviews</a>
+                        </div>
+                        <h3 class="card-title h5 flex-center ">
+                          <a class="text-dark px-xl-5 py-1 px-sm-5 px-md-0" href="">Like A Virgin Hair Masque Could be in 2 lines</a>
+                        </h3>
+                        <p class="card--product__price h5">
+                          <span class="card--product__price__regular text-line-through"><span class="sr-only">Regular price:</span> £59.90</span> 
+                          <span class="card--product__price__sale text-primary"><span class="sr-only">Sale price:</span> £49.90</span>
+                        </p>
+                        <a href="#" class="btn btn-lg btn-primary btn-block col-10 col-lg-12 mx-auto px-1">Add To Cart</a>
+                      </div>
+                    </div>
+                </div>                    <div class="carousel-item col-3">
+                  <div class="card card--product">
+                      <a class="card--product__media d-block" href="#">
+                        <picture class="d-block">
+                          <source media="(max-width: 767px)" srcset="./img/placeholder-mobile.png">
+                          <source media="(min-width: 767px)" srcset="./img/placeholder.png">
+                          <img class="card-img-top" src="./img/placeholder.png" alt="Product image" loading="lazy">
+                        </picture>
+                      </a>  
+                      <div class="card-body px-1 pt-2">
+                        <div class="ratings">
+                          <span class="ratings__stars">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M8 12L2 16L5 10L0 6H6L8 0L10 6H16L11 10L14 16L8 12Z" fill="#F4436C"/>
+                            </svg>  
+                          </span>
+                          <span class="pr-1">4.8/5.0</span> 
+                          <a href="#" class="text-primary text-underline">199 Reviews</a>
+                        </div>
+                        <h3 class="card-title h5 flex-center ">
+                          <a class="text-dark px-xl-5 py-1 px-sm-5 px-md-0" href="">Like A Virgin Hair Masque Could be in 2 lines</a>
+                        </h3>
+                        <p class="card--product__price h5">
+                          <span class="card--product__price__regular text-line-through"><span class="sr-only">Regular price:</span> £59.90</span> 
+                          <span class="card--product__price__sale text-primary"><span class="sr-only">Sale price:</span> £49.90</span>
+                        </p>
+                        <a href="#" class="btn btn-lg btn-primary btn-block col-10 col-lg-12 mx-auto px-1">Add To Cart</a>
+                      </div>
+                    </div>
+                </div>                    <div class="carousel-item col-3">
+                  <div class="card card--product">
+                      <a class="card--product__media d-block" href="#">
+                        <picture class="d-block">
+                          <source media="(max-width: 767px)" srcset="./img/placeholder-mobile.png">
+                          <source media="(min-width: 767px)" srcset="./img/placeholder.png">
+                          <img class="card-img-top" src="./img/placeholder.png" alt="Product image" loading="lazy">
+                        </picture>
+                      </a>  
+                      <div class="card-body px-1 pt-2">
+                        <div class="ratings">
+                          <span class="ratings__stars">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M8 12L2 16L5 10L0 6H6L8 0L10 6H16L11 10L14 16L8 12Z" fill="#F4436C"/>
+                            </svg>  
+                          </span>
+                          <span class="pr-1">4.8/5.0</span> 
+                          <a href="#" class="text-primary text-underline">199 Reviews</a>
+                        </div>
+                        <h3 class="card-title h5 flex-center ">
+                          <a class="text-dark px-xl-5 py-1 px-sm-5 px-md-0" href="">Like A Virgin Hair Masque Could be in 2 lines</a>
+                        </h3>
+                        <p class="card--product__price h5">
+                          <span class="card--product__price__regular text-line-through"><span class="sr-only">Regular price:</span> £59.90</span> 
+                          <span class="card--product__price__sale text-primary"><span class="sr-only">Sale price:</span> £49.90</span>
+                        </p>
+                        <a href="#" class="btn btn-lg btn-primary btn-block col-10 col-lg-12 mx-auto px-1">Add To Cart</a>
+                      </div>
+                    </div>
+                </div>                                              
+            </div>
+          </div> 
+        </div>  
+
+        <!--Controls-->
+        <a class="carousel-control-prev" href="#supernova-products-carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#supernova-products-carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+
+    </div>
+
+    <div class="text-center mt-4">
+      <a href="#" class="btn btn-outline-primary btn-lg btn-wide ">Shop Now</a>
+    </div>
+
+  </section>
+
+
+
+    <script src="./vendor/jquery/jquery.slim.min.js"></script>
+    <script src="./vendor/bootstrap/js/dist/util.js"></script>
+    <script src="./vendor/bootstrap/js/dist/carousel.js"></script>
+
+    <script src="./js/carousalMultiSlide.js"></script>
     
 </body>
 </html>

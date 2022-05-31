@@ -1,0 +1,21 @@
+
+// Add custom gutter to screen md and up
+@include media-breakpoint-up(md){
+  .container, 
+  .container-fluid, 
+  .container-xl, 
+  .container-lg, 
+  .container-md, 
+  .container-sm {
+    @include make-container($gutter: $supernova-grid-gutter-width-md);
+  }
+
+  .row {
+    @include make-row($gutter: $supernova-grid-gutter-width-md);
+  }
+  
+  .col, [class*=col-] {
+    padding-right: $supernova-grid-gutter-width-md * .5;
+    padding-left: $supernova-grid-gutter-width-md * .5;
+  }
+}
